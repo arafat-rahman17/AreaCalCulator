@@ -63,16 +63,16 @@ class Arafat(tk.Tk):
         self.input_unit_combo.current(0)
 
         self.output_unit_label = tk.Label(self, text="Output Unit:")
-        self.output_unit_label.place(x=220, y=290)
+        self.output_unit_label.place(x=302, y=290)
         self.output_unit_combo = ttk.Combobox(self, values=units)
-        self.output_unit_combo.place(x=320, y=290)
+        self.output_unit_combo.place(x=380, y=290)
         self.output_unit_combo.current(0)
 
         self.calculate_button = tk.Button(self, text="Calculate", command=self.calculate_area)
         self.calculate_button.place(x=20, y=320)
 
-        self.result_area = tk.Text(self, width=30, height=5)
-        self.result_area.place(x=260, y=50)
+        self.result_area = tk.Text(self, width=30, height=10)
+        self.result_area.place(x=300, y=50)
         self.result_area.configure(state='disabled')
 
     def calculate_area(self):
